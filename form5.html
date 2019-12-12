@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form id="form">
+    <div id="6">
+      <span>  Name : </span><input class="name" type="text" maxlength=20 minlength=5 required onchange="check()">
+    </div>
+    <br>
+    <div id="7">
+        <span>Age : </span><input class="age" type="number" max=60 min=16 value="16" required onchange="check()">
+    </div>
+    <div>
+        <span>Javascript : </span><input  id="js" type="range" max=100 min=1 onchange="AVG()" >
+    </div>
+    <div >
+        <span>Html : </span><input id="html" type="range" max=100 min=1 onchange="AVG()">
+    </div>
+    <div>
+     <span>   CSS : </span><input id="css" type="range" max=100 min=1 onchange="AVG()">
+    </div>
+    <div>
+        <span>Average Skills : </span><span id="result"></span>
+    </div>
+    <br>
+    <br>
+    <button id="save" disabled type="submit">
+        Submit
+    </button>
+</form>
+<script src="form5.js">
+    // let output = document.getElementById("result");
+    // let js =  Number(document.getElementById("js").value[0]);
+    // let HTML =  Number(document.getElementById("html").value[0]);
+    // let Css =  Number(document.getElementById("css").value[0]);
+    // let age =  Number(document.getElementById("age").value);
+    // let name =  document.getElementById("name").value[0];
+    // console.log(name)
+    // let AVG = ()=>{
+    //     output.innerHTML=`${(js + HTML+ Css)/3}`;
+    // }
+    // function check(){
+    //     if(name>=5&&name.length<20&&age<16&&age>60){
+    //          document.getElementById("save").disabled=false
+    //        // alert("ss")
+    //     }
+    // }
+</script>
+</body>
+</html>
